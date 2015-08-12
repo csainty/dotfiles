@@ -76,6 +76,15 @@
 		fi \
 	}; f"
 
+	# Save current state to come back to it
+	save = "!git add -A && git commit -m 'SAVEPOINT'"
+
+	# Undo last commit
+	undo = reset HEAD~1 --mixed
+
+	# Hard reset with a savepoint is the reflog
+	wipe = "!git add -A && git commit -qm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard"
+
 [core]
 
 	# Use custom `.gitignore` and `.gitattributes`

@@ -129,3 +129,4 @@ alias reload="exec $SHELL -l"
 #docker
 alias docker-clean="docker ps -a -q | xargs docker rm"
 alias docker-cleani="docker images -q | xargs docker rmi"
+alias docker-start='boot2docker up;eval "$(boot2docker shellinit)";boot2docker ip'
