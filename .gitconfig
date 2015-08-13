@@ -85,11 +85,17 @@
 	# Hard reset with a savepoint is the reflog
 	wipe = "!git add -A && git commit -qm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard"
 
+	# Get latest and tidy up
+	up = "!git fetch --prune && git pull && git dm"
+
 [core]
 
 	# Use custom `.gitignore` and `.gitattributes`
 	excludesfile = ~/.gitignore
 	attributesfile = ~/.gitattributes
+
+	# Line endings
+	autocrlf = input
 
 	# Make `git rebase` safer on OS X
 	# More info: <http://www.git-tower.com/blog/make-git-rebase-safe-on-osx/>
