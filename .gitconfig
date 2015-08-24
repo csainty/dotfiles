@@ -182,7 +182,7 @@
 
 [difftool "sourcetree"]
 	cmd = /usr/local/bin/bcomp -ro $LOCAL $REMOTE
-	path =
+	path = 
 [mergetool "sourcetree"]
 	cmd = /usr/local/bin/bcomp $LOCAL $REMOTE $BASE $MERGED
 	trustExitCode = true

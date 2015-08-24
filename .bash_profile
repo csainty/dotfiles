@@ -6,6 +6,9 @@ nvm use stable
 # Load z
 . `brew --prefix`/etc/profile.d/z.sh
 
+# Load jenv
+if which jenv > /dev/null; then eval "$(jenv init -)"; fi
+
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
