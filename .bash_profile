@@ -1,11 +1,7 @@
 export PATH="/usr/local/sbin:$PATH"
-export NVM_DIR="/Users/csainty/.nvm"
 
 # Load z
 . `brew --prefix`/etc/profile.d/z.sh
-
-# Load jenv
-if which jenv > /dev/null; then eval "$(jenv init -)"; fi
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.

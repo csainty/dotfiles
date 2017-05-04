@@ -38,9 +38,6 @@ brew install bash
 brew tap homebrew/versions
 brew install bash-completion
 
-# Install `wget` with IRI support.
-brew install wget --with-iri
-
 # Install more recent versions of some OS X tools.
 brew install vim --override-system-vi
 brew install homebrew/dupes/grep
@@ -50,13 +47,13 @@ brew install homebrew/dupes/openssh
 brew install ack
 brew install dark-mode
 brew install git
-brew install git-lfs
 brew install rename
-#brew install nvm
+
+# Front end stuff
+brew install node
 
 # Casks
 #brew cask install google-chrome
-#brew cask install firefox
 #brew cask install iterm2
 #brew cask install java
 #brew cask install caffeine
@@ -70,9 +67,7 @@ brew install rename
 #brew cask install sourcetree
 #brew cask install httpscoop
 #brew cask install cloak
-#brew cask install libreoffice
 #brew cask install the-unarchiver
-
 
 # Remove outdated versions from the cellar.
 brew cleanup
